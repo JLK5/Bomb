@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="case">
+        <div id="Timer">
+            <div id="Countdown" onclick="showManual()">20</div>
+        </div>
+        <div id="battery" onclick="powerOff()"></div>
+        <div id="puzzles">
+            <div id="buttonPuzzle">
+                <div id="buttons">
+                    <div id="button1" onclick="buttonpress1()">1</div>
+                    <div id="button2" onclick="buttonpress2()">2</div>
+                    <div id="button3" onclick="buttonpress3()">3</div>
+                    <div id="button4" onclick="buttonpress4()">4</div>
+                </div>
+            </div>
+            <div id="wirePuzzle">
+                <div id="wires">
+                    <div id="wire1" onclick="cutwire1()"></div>
+                    <div id="wire2" onclick="cutwire2()"></div>
+                    <div id="wire3" onclick="cutwire3()"></div>
+                    <div id="wire4" onclick="cutwire4()"></div>
+                    <div id="wire5" onclick="cutwire5()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="manual" onclick="hideManual()">
+        <div id="page">
+        <h1>Instrukcje:</h1><br>
+        <p>
+            Krok 1:<br>
+            Wciśnij guziki na lewym panelu w kolejności: 2,4,1,3<br>
+            <br>
+            Krok 2:<br>
+            Na prawym panelu odetnij czwarty od góry kabel<br>
+            <br>
+            Krok 3:<br>
+            Po wykonaniu poprzednich kroków odetnij elektrycznośc poprzez wyciągnięcie baterii w prawym górnym rogu.<br>
+        </p>
+        </div>
+    </div>
+    <div id="gifs">
+        <div id="explosion">
+            <img src="explosion.gif" alt="">
+        </div>
+        <div id="Conffeti">
+            <img src="conffeti.gif" alt="">
+        </div>
+    </div>
+</body>
+</html>
